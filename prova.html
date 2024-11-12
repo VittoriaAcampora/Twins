@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mia pagina</title>
     <style>
-        /* Sfondo sfumato */
+        /* Sfondo uniforme */
         body {
-            background: linear-gradient(to bottom right, #a2d5f2, #0077b6);
+            background-color: #a2d5f2; /* Un azzurro uniforme */
             font-family: Arial, sans-serif;
             color: #333;
             text-align: center;
             margin: 0;
             padding: 0;
+            height: 100vh; /* Assicurati che l'altezza copra tutta la pagina */
         }
 
         /* Stile del titolo */
         h1 {
-            font-size: 5em; /* Aumentato a 5em */
+            font-size: 3.5em; /* Ridotto per una visualizzazione più equilibrata */
             color: #ffffff;
             text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Maggiore ombra per il titolo */
             margin-top: 30px; /* Maggiore spazio sopra il titolo */
@@ -25,8 +26,8 @@
 
         /* Stile del paragrafo */
         p {
-            font-size: 1.5em; /* Aumentato a 1.5em */
-            margin: 20px 30px; /* Maggiore spazio ai lati */
+            font-size: 1.3em; /* Ridotto per migliorare la leggibilità */
+            margin: 20px 30px; /* Spazio ai lati più moderato */
             color: #ffffff;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Ombrato per leggibilità */
         }
@@ -36,18 +37,34 @@
             display: inline-block;
             background-color: #4DA8D6; /* Azzurro chiaro */
             color: #ffffff;
-            padding: 15px 30px; /* Aumentato il padding */
-            font-size: 1.5em; /* Aumentata la dimensione del testo nel link */
+            padding: 12px 25px; /* Ridotto il padding per un aspetto più compatto */
+            font-size: 1.4em; /* Leggermente ridotto il testo nel link */
             text-decoration: none;
-            border-radius: 10px; /* Bordo più arrotondato */
+            border-radius: 10px; /* Bordo arrotondato */
             font-weight: bold;
             box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Maggiore ombra */
             transition: background-color 0.3s ease;
+            margin-top: 20px;
         }
 
         /* Effetto hover sul link */
         a:hover {
             background-color: #3584A1; /* Azzurro più scuro al passaggio del mouse */
+        }
+
+        /* Media Query per dispositivi mobili */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Ridotto su schermi piccoli */
+            }
+            p {
+                font-size: 1.2em; /* Ridotto anche il paragrafo */
+                margin: 15px 20px; /* Spazio ridotto sui dispositivi mobili */
+            }
+            a {
+                padding: 10px 20px; /* Ridotto il padding del link sui dispositivi mobili */
+                font-size: 1.3em; /* Ridotto il testo del link sui dispositivi mobili */
+            }
         }
     </style>
 </head>
