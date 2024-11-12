@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mia pagina</title>
     <style>
-        /* Sfondo sfumato */
+        /* Sfondo sfumato uniforme */
         body {
-            background: linear-gradient(to bottom right, #a2d5f2, #89c6e2); /* Gradiente morbido */
+            background: linear-gradient(to bottom right, #a2d5f2, #0077b6); /* Gradiente continuo */
             font-family: Arial, sans-serif;
             color: #333;
             text-align: center;
             margin: 0;
             padding: 0;
+            height: 100vh; /* Assicurati che l'altezza copra tutta la pagina */
+            background-size: cover; /* Fa sì che il gradiente copra l'intero schermo */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Stile del titolo */
@@ -29,6 +35,7 @@
             margin: 20px 30px;
             color: #ffffff;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            line-height: 1.6; /* Spazio tra le righe per una lettura migliore */
         }
 
         /* Stile per il link al premio */
@@ -41,51 +48,4 @@
             text-decoration: none;
             border-radius: 10px;
             font-weight: bold;
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s ease;
-        }
-
-        /* Effetto hover sul link */
-        a:hover {
-            background-color: #3584A1;
-        }
-
-        /* Media Query per dispositivi mobili */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em; /* Riduci la dimensione del titolo su schermi piccoli */
-            }
-            p {
-                font-size: 1.2em; /* Riduci la dimensione del testo per il paragrafo */
-                margin: 15px 20px; /* Spazio ridotto sui dispositivi mobili */
-            }
-            a {
-                padding: 12px 25px; /* Riduci il padding del link sui dispositivi mobili */
-                font-size: 1.3em; /* Riduci la dimensione del testo nel pulsante */
-            }
-        }
-
-        /* Media Query per schermi molto piccoli */
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2em; /* Ancora più piccolo per schermi più piccoli */
-            }
-            p {
-                font-size: 1em; /* Testo più piccolo su schermi molto piccoli */
-            }
-            a {
-                padding: 10px 20px; /* Ancora più piccolo il link */
-                font-size: 1.1em; /* Ancora più piccolo il testo del link */
-            }
-        }
-    </style>
-</head>
-<body>
-    <h1>Bravissimo! &#128522;</h1>
-    <p>Tu si che sei un vero twiners!!</p>
-    <p>Probabilmente ci conosci da quando siamo piccole, quindi hai sviluppato un sesto senso che ti permette di distinguerci anche ad occhi chiusi. Forse invece, anche se ci conosci da poco, hai imparato a notare le differenze e questo ti ha permesso di rispondere con successo a tutti i sondaggi.</p>
-
-    <!-- Link alla scritta "Clicca qui per il tuo premio" che apre l'immagine -->
-    <p><a href="https://github.com/VittoriaAcampora/Twins/raw/main/forza-napoli-sempre-adesivo.jpg" target="_blank">Clicca qui per il tuo premio!</a></p>
-</body>
-</html>
+            box-shadow: 0px 6px 
